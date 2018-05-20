@@ -4,5 +4,5 @@
 Appointments:
   <% @doctor.appointments.each do |appointment| %>
     <%= appointment.appointment_datetime
-    <%= link_to appointment.patient.name, patient_path(appointment.patient) if appointment.patient%>
+    <%= link_to appointment.patient.name, patient_path(appointment.patient) if appointment.patient %>
   <% end %>
