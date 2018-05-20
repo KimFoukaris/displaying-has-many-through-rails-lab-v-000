@@ -3,9 +3,9 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.new
   end
 
-  #def index
+  def index
   #  redirect_to new_appointment_path
-#  end
+  end
 
   def create
     @appointment = Appointment.create(:appointment_params)
