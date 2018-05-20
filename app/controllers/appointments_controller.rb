@@ -1,7 +1,7 @@
 class AppointmentsController < ApplicationController
 
   def index
-    raise ActionController::RoutingError
+    raise ActionController::RoutingError.new('List of appointments not permitted')
   end
 
   def new
