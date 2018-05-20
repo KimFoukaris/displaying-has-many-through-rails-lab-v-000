@@ -3,6 +3,6 @@
 
 Appointments:
   <% @doctor.appointments.each do |appointment| %>
-    <%= appointment.appointment_datetime
+    <%= appointment.appointment_datetime %>
     <%= link_to appointment.patient.name, patient_path(appointment.patient) %>
   <% end %>
